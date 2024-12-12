@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   quicksort.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/12 18:06:50 by lrecine-          #+#    #+#             */
+/*   Updated: 2024/12/12 18:06:50 by lrecine-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "../printf/ft_printf.h"
 #include <stdlib.h>
@@ -14,12 +26,12 @@ void	quicksort_three_pile_a_and_b(t_piles *pile, int len)
 	else if (len == 3)
 	{
 		while (len != 3 || !(pile->a[0] > pile->a[1]
-			&& pile->a[1] > pile->a[2]))
+				&& pile->a[1] > pile->a[2]))
 		{
 			if (len == 3 && pile->a[0] > pile->a[1] && pile->a[2])
 				swap_a(pile, 0);
 			else if (len == 3 && !(pile->a[2] > pile->a[0]
-				&& pile->a[2] > pile->a[1]))
+					&& pile->a[2] > pile->a[1]))
 				len = ft_push(pile, len, 0);
 			else if (pile->a[0] > pile->a[1])
 				swap_a(pile, 0);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_pushswap.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/12 18:03:05 by lrecine-          #+#    #+#             */
+/*   Updated: 2024/12/12 18:03:30 by lrecine-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "../printf/ft_printf.h"
 #include <stdlib.h>
@@ -11,8 +23,8 @@ void	error_detected(int *pile)
 
 int	push_swap_atoi(char *str, int *pile)
 {
-	unsigned int	i;
-	int				sign;
+	unsigned int		i;
+	int					sign;
 	unsigned long int	nb;
 
 	i = 0;

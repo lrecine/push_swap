@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/12 18:06:05 by lrecine-          #+#    #+#             */
+/*   Updated: 2024/12/12 18:06:06 by lrecine-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "../libft/libft.h"
 #include "../printf/ft_printf.h"
@@ -6,9 +18,9 @@
 void	push_swap(char **av)
 {
 	t_piles	pile;
-	int	size;
-	int	i;
-	
+	int		size;
+	int		i;
+
 	i = -1;
 	size = push_swap_strlen(av);
 	pile.a = malloc(size * sizeof(int));

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rotate.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/12 18:04:53 by lrecine-          #+#    #+#             */
+/*   Updated: 2024/12/12 18:04:54 by lrecine-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "../printf/ft_printf.h"
 
@@ -47,7 +59,7 @@ void	rotate_r(t_piles *pile, int bonus)
 	int	i;
 
 	if (pile->size_a == 0 || pile->size_a == 1
-	|| (pile->size_b == 0 || pile->size_b == 1))
+		|| (pile->size_b == 0 || pile->size_b == 1))
 		return ;
 	i = 0;
 	tmp = pile->a[i];

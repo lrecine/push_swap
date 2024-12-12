@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   swap.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/12 18:07:18 by lrecine-          #+#    #+#             */
+/*   Updated: 2024/12/12 18:07:19 by lrecine-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "../printf/ft_printf.h"
 
@@ -29,7 +41,7 @@ void	swap_b(t_piles *pile, int bonus)
 		ft_printf("sb\n");
 }
 
-void swap_s(t_piles *pile, int bonus)
+void	swap_s(t_piles *pile, int bonus)
 {
 	int	tmp;
 
