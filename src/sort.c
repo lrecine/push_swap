@@ -6,7 +6,7 @@
 /*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 18:04:06 by lrecine-          #+#    #+#             */
-/*   Updated: 2024/12/12 18:04:12 by lrecine-         ###   ########.fr       */
+/*   Updated: 2024/12/15 15:11:54 by lrecine-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,13 @@ void	three_numbers_case_pile_a(t_piles *three)
 		&& three->a[1] < three->a[2])
 		swap_a(three, 0);
 	if (three->a[0] > three->a[1] && three->a[0] > three->a[2]
-		&& three->a[1] < three->a[2])
+		&& three->a[1] > three->a[2])
 	{
 		swap_a(three, 0);
 		rev_rotate_a(three, 0);
 	}
 	if (three->a[0] > three->a[1] && three->a[0] > three->a[2]
-		&& three->a[1] > three->a[2])
+		&& three->a[1] < three->a[2])
 		rotate_a(three, 0);
 	if (three->a[0] < three->a[1] && three->a[0] < three->a[2]
 		&& three->a[1] > three->a[2])

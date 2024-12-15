@@ -6,7 +6,7 @@
 /*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 18:06:50 by lrecine-          #+#    #+#             */
-/*   Updated: 2024/12/12 18:06:50 by lrecine-         ###   ########.fr       */
+/*   Updated: 2024/12/15 15:06:21 by lrecine-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	quicksort_three_pile_a_and_b(t_piles *pile, int len)
 	}
 	else if (len == 3)
 	{
-		while (len != 3 || !(pile->a[0] > pile->a[1]
-				&& pile->a[1] > pile->a[2]))
+		while (len != 3 || !(pile->a[0] < pile->a[1]
+				&& pile->a[1] < pile->a[2]))
 		{
 			if (len == 3 && pile->a[0] > pile->a[1] && pile->a[2])
 				swap_a(pile, 0);
@@ -97,7 +97,7 @@ int	quicksort_pile_a(t_piles *pile, int len, int count_r)
 	numbers = len;
 	if (len <= 3)
 		return (quicksort_three_pile_a_and_b(pile, len), 1);
-	if (mediane_of_numbers(&pivot, pile->a, len))
+	if (!mediane_of_numbers(&pivot, pile->a, len))
 		return (0);
 	while (len != numbers / 2 + numbers % 2)
 	{
