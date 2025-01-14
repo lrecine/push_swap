@@ -6,7 +6,7 @@
 /*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:55:56 by lrecine-          #+#    #+#             */
-/*   Updated: 2024/12/10 16:59:23 by lrecine-         ###   ########.fr       */
+/*   Updated: 2025/01/14 17:51:32 by lrecine-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,6 @@ char	*ft_strdup_gnl(const char *s);
 char	*ft_strchr_gnl(const char *s, int c);
 char	*ft_strjoin_gnl(char const *s1, char const *s2);
 size_t	ft_strlen_gnl(const char *s);
+int		ft_strcmp(char *s1, char *s2);
+
 #endif

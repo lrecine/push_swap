@@ -6,7 +6,7 @@
 /*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 18:09:11 by lrecine-          #+#    #+#             */
-/*   Updated: 2024/12/12 18:23:50 by lrecine-         ###   ########.fr       */
+/*   Updated: 2025/01/14 18:13:52 by lrecine-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,9 @@ void	read_from_stdin(t_piles *pile)
 
 int	*c_errors(char **av)
 {
-	int *a;
-	int size;
-	int i;
+	int	*a;
+	int	size;
+	int	i;
 
 	i = -1;
 	size = push_swap_strlen(av);
@@ -91,6 +91,11 @@ int	main(int ac, char **av)
 
 	if (ac > 1)
 	{
+		if (av[1] == NULL || av[1][0] == '\0')
+		{
+			ft_printf("Error\n");
+			exit(1);
+		}
 		av++;
 		if (ac == 2)
 			av = ft_split(*av, ' ');
@@ -98,7 +103,7 @@ int	main(int ac, char **av)
 		pile.size_a = push_swap_strlen(av);
 		pile.b = malloc(pile.size_a * sizeof(int));
 		if (!pile.b)
-			return(free(pile.a), 0);
+			return (free(pile.a), 0);
 		pile.size_b = 0;
 		read_from_stdin(&pile);
 	}

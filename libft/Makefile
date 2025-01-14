@@ -6,7 +6,7 @@
 #    By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/17 15:32:04 by lrecine-          #+#    #+#              #
-#    Updated: 2024/12/10 17:00:49 by lrecine-         ###   ########.fr        #
+#    Updated: 2025/01/14 17:51:18 by lrecine-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_strlen.c ft_isascii.c \
     ft_strlcpy.c ft_strlcat.c ft_calloc.c ft_memcmp.c ft_strnstr.c \
     ft_substr.c ft_strncmp.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
     ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-    ft_putnbr_fd.c get_next_line.c get_next_line_utils.c
+    ft_putnbr_fd.c ft_strcmp.c get_next_line.c get_next_line_utils.c
 
 OBJ = ${SRC:.c=.o}
 

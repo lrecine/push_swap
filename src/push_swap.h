@@ -6,7 +6,7 @@
 /*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 18:05:30 by lrecine-          #+#    #+#             */
-/*   Updated: 2024/12/12 18:24:02 by lrecine-         ###   ########.fr       */
+/*   Updated: 2025/01/14 17:38:42 by lrecine-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,5 @@ int		quicksort_pile_b(t_piles *pile, int len, int count_r);
 int		sort(t_piles *pile, int size);
 int		ft_push(t_piles *pile, int len, int push);
 int		*c_errors(char **av);
+
 #endif
