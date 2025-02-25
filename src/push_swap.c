@@ -6,7 +6,7 @@
 /*   By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 18:06:05 by lrecine-          #+#    #+#             */
-/*   Updated: 2025/01/14 17:41:20 by lrecine-         ###   ########.fr       */
+/*   Updated: 2025/02/25 15:05:03 by lrecine-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,25 @@ void	push_swap(char **av)
 
 int	main(int ac, char **av)
 {
+    int		i;
+
 	if (ac > 1)
 	{
 		av++;
 		if (ac == 2)
+		{
 			av = ft_split(*av, ' ');
+			if (!av)
+				return (0);
+		}
 		push_swap(av);
+		i = 0;
+		while (av[i])
+        {
+            free(av[i]);
+            i++;
+        }
+        free(av);
 		return (0);
 	}
 	return (0);
