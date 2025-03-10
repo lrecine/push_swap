@@ -6,7 +6,7 @@
 #    By: lrecine- <lrecine-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/17 15:32:04 by lrecine-          #+#    #+#              #
-#    Updated: 2025/01/14 17:51:18 by lrecine-         ###   ########.fr        #
+#    Updated: 2025/03/10 14:58:59 by lrecine-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRC_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_ba
 OBJ_BONUS = ${SRC_BONUS:.c=.o}
 
 CC = cc
-CCFLAGS = -Wall -Wextra -Werror
+CCFLAGS = -Wall -Wextra -Werror -fPIE
 HEADER = libft.h
 
 all: ${NAME}
